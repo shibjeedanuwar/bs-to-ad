@@ -22,6 +22,8 @@ A simple web application that converts dates between the Nepali calendar and the
 
 You can view the live demo of the Date Converter [here](https://bstoaddate.blogspot.com/).
 
+![Screenshot of Date Converter](assets/images/Nepali-date.png)
+
 ## Installation
 
 To run this project locally, follow these steps:

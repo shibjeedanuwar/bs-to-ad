@@ -1,0 +1,115 @@
+       
+
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: "Poppins", serif; */
+background: rgb(238, 174, 202);
+background: radial-gradient(
+circle,
+rgba(238, 174, 202, 1) 0%,
+rgba(148, 187, 233, 1) 100%
+);
+    margin: 0;
+   
+}
+#shake{
+   display:flex;
+
+}
+.calendar {
+    width: 100%;
+    height: auto; /* Allow height to adjust */
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    box-shadow: 0 14px 14px -10px rgba(0,0,0,0.25);
+    margin: 0px; /* Add margin between calendars */
+    position: relative; /* Needed for :before and :after pseudo-elements */
+    display:none;
+
+
+}
+.calendar.active{
+    display:block;
+}
+.calendar:before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+.calendar:after {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -20px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.calendar__month,
+.calendar__day,
+.calendar__year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px; /* Uniform height for all */
+    background-color: crimson; /* Background for month and year */
+    color: white;
+    font-size: 2.5rem; /* Base font size */
+}
+.calendar__day {
+    background-color: white; /* Different background for day */
+    color: black; /* Different color for day */
+    height: 225px; /* Taller for day */
+    font-size: 6rem; /* Base font size */
+}
+.calendar__year {
+    background-color: lightgray; /* Background for year */
+    color: black;
+}
+
+/* Keyframes */
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .calendar__month,
+    .calendar__year {
+        height: 60px; /* Adjust height for smaller screens */
+        font-size: 5vw; /* Responsive font size */
+    }
+    .calendar__day {
+        height: 180px;
+        font-size: 8vw; /* Responsive font size */
+    }
+}
+
+@media (max-width: 400px) {
+    .calendar__month,
+    .calendar__year {
+        height: 50px; /* Adjust height for very small screens */
+        font-size: 10vw; /* Further responsive font size */
+    }
+    .calendar__day {
+        height: 150px;
+        font-size: 12vw; /* Further responsive font size */
+    }
+}
