@@ -12,7 +12,7 @@ A simple web application that converts dates between the Nepali calendar and the
 - [License](#license)
 
 ## Features
-- how to ad to bs date convert instruction
+- how to bs to ad date convert instruction
 - Convert Nepali dates to English dates and vice versa.
 - bs to ad  or ad to bs
 - User-friendly interface with Bootstrap styling.
