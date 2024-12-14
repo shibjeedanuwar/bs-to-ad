@@ -1,12 +1,14 @@
-# how to convert bs to ad manually
+# How to convert bs to ad manually
 
 A simple web application that converts dates between the Nepali calendar and the Gregorian calendar.
-convert bs to ad
-convert bs to ad
-bs to ad converter
-translate bs to ad
-bs to ad
-date calculator bs to ad
+Convert bs to ad,
+Convert bs to ad,
+bs to ad converter,
+translate bs to ad,
+bs to ad,
+date calculator bs to ad,
+You can view the live demo of the Date Converter [here](https://bstoad.online/).
+
 ## Table of Contents
 
 - [Features](#features)
